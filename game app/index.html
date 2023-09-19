@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      #main_header {
+        background-color: black;
+        height: 80px;
+        margin: 0;
+      }
+      #header_ul {
+        list-style-type: none;
+        margin: 0;
+        padding-right: 20px;
+        padding-top: 30px;
+      }
+      .headerh1 {
+        margin: 0;
+        color: antiquewhite;
+        padding-top: 30px;
+        padding-left: 30px;
+        font-size: 25px;
+      }
+      #header_ul li {
+        display: inline;
+        padding-left: 10px;
+      }
+      .header_a {
+        text-decoration: none;
+        color: antiquewhite;
+      }
+      #div-rigth {
+        position: absolute;
+        right: 0;
+      }
+      #div-left {
+        position: absolute;
+        left: 0;
+      }
+      #div-center {
+        position: absolute;
+        left: 46%;
+        transform: translateX(-50%);
+      }
+      .game-name {
+        padding-left: 15px;
+      }
+
+      #main {
+        height: 100%;
+      }
+      #section1 {
+        background-image: url(cosmic-background-with-colorful-laser-lights-perfect-digital-wallpaper.jpg);
+        width: 100%;
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+      }
+      #mainh1 {
+        font-size: 20px;
+      }
+      p {
+        color: antiquewhite;
+        padding: 20px;
+      }
+
+      .gameinformationp {
+        color: black;
+      }
+      #gamephoto {
+        height: 200px;
+        float: left;
+        margin: 30px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+     
+      .game-a {
+        display: block;
+        float: right;
+        width: 150px;
+        margin-top:30px ;
+        margin-right: 30px;
+        padding: 3px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all 0.35s;
+      }
+
+      .game-a span {
+        position: relative;
+        z-index: 2;
+      }
+
+      .game-a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all 0.35s;
+      }
+
+      .game-a:hover {
+        color: #fff;
+      }
+
+      .game-a:hover:after {
+        width: 100%;
+      }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <header id="main_header">
+      <div id="div-left">
+        <h1  class="headerh1" id="div-left-h1">GAMEAPP</h1>
+      </div>
+      <div id="div-center">
+        <ul id="header_ul">
+          <li><a class="header_a game-name" href="#" onclick="slowScroll('#valorant')">VALORANT</a></li>
+          <li><a class="header_a game-name" href="#" onclick="slowScroll('#League-of-Legends')">LEAGUE OF LEGENDS</a></li>
+          <li><a class="header_a game-name" href="#" onclick="slowScroll('#Counter-Strike')">COUNTER STRİKE</a></li>
+          <li><a class="header_a game-name" href="#" onclick="slowScroll('#Fortnite')">FORTNİTE</a></li>
+          <li><a class="header_a game-name" href="#" onclick="slowScroll('#Pubg')">PUBG</a></li>
+        </ul>
+      </div>
+      <div id="div-rigth">
+        <ul id="header_ul">
+          <li>
+            <a class="header_a" href="">SİGN UP</a>
+          </li>
+          <li>
+            <a class="header_a" href="">LOGİN</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="main">
+      <section id="section1" class="sections">
+        <div class="promotions">
+          <h1 id="mainh1" class="headerh1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            excepturi.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.
+          </p>
+          <h1 id="mainh1" class="headerh1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            excepturi.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="gameinformation1 clearfix" id="valorant">
+          <img id="gamephoto" src="valorant.jpg" alt="" />
+          <p class="gameinformationp ">
+            
+            <h1 >Valorant</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.asas
+            <a class="game-a" href=""><span>Detaylar</span></a>
+          </p>
+        </div>
+        <div  class="gameinformation1 clearfix" id="League-of-Legends">
+          <img id="gamephoto" src="league of legends.jpg" alt="" />
+          <p class="gameinformationp ">
+            
+            <h1 >League of Legends</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.asas
+            <a class="game-a" href=""><span>Detaylar</span></a>
+          </p> 
+          
+        </div>
+
+        <div class="gameinformation3 clearfix" id="Counter-Strike">
+          <img id="gamephoto" src="cs.jpg" alt="" />
+          <p class="gameinformationp ">
+            <h1 >Counter Strike</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.
+            <a class="game-a" href=""><span>Detaylar</span></a>
+          </p>
+        </div>
+
+        <div class="gameinformation4 clearfix" id="Fortnite">
+          <img id="gamephoto" src="fortnite.jpg" alt="" />
+          <p class="gameinformationp ">
+            <h1 >Fortnite</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.
+            <a class="game-a" href=""><span>Detaylar</span></a>
+          </p>
+        </div>
+
+        <div class="gameinformation5 clearfix" id="Pubg"> 
+          <img id="gamephoto" src="pubg.jpg" alt="" />
+          <p class="gameinformationp ">
+            <h1 >Pubg</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            suscipit reiciendis perferendis eum dolorem deleniti facere ad iste,
+            voluptatem veritatis consequuntur voluptatum modi? Sequi, ipsa
+            laboriosam maxime quae similique nihil!Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis delectus corporis
+            reprehenderit ducimus adipisci debitis commodi totam velit id quasi,
+            quibusdam aperiam aliquid blanditiis. Aperiam, quod magnam. Minus,
+            perferendis nemo.
+            <a class="game-a" href=""><span>Detaylar</span></a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function slowScroll(target) {
+  var targetElement = document.querySelector(target);
+  var targetPosition = targetElement.offsetTop; // Hedef elementin sayfadaki konumunu alın
+
+  // Yavaş kaydırma işlemi
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth' // 'smooth' değeri yavaş kaydırmayı sağlar
+  });
+}
+  </script>
+  </body>
+</html>
